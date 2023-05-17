@@ -158,22 +158,6 @@ function UE() {
         getFiliere()
     },[])
 
-    //Utilisation du hook useEffect pour récupérer les UEs depuis l'API
-    useEffect(() => {
-        const getUE = async() => {
-            try {
-                const response = await ApiService.get(`/ues/?page=1&offset=100`);
-                if(response.status === 200)
-                {
-                    setUEList(response?.data?.data)
-                    setTotalPages(Math.ceil(response?.data?.total))
-                }
-            } catch (error) {
-                console.log(error)
-            }
-        }
-        getUE()
-    },[])
 
     // Utilisation du hook useEffect pour récupérer les données depuis l'API
     // Cette fonction doit etre utilisée pour récupérer les UEs depuis l'API 
@@ -262,7 +246,7 @@ function UE() {
                     <button className={`text-white border-2 border-blue-500 bg-blue-500 blue-500   px-2 cursor-pointer rounded-md mr-2 ${paginationDetail.page <= 1 ? 'disabled' : ''}`} onClick={onPrevious}>Page précédente</button>
                     <button className={`border-2 border-blue-500 bg-blue-500 blue-500   px-2 cursor-pointer rounded-md ml-2 ${paginationDetail.page >= totalPages ? 'disabled' : ''}`} onClick={onNext}>Page suivante</button>
                 </div>
-                </div>
+            </div>
         </div>
         {/* Modal pour modifier l'UE */}
         {isEdit && (
