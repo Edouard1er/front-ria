@@ -37,7 +37,7 @@ class AuthService {
     } 
     isAdmin() {
         const current_user = JSON.parse(localStorage.getItem('current_user'))
-        if(current_user.is_admin){
+        if(current_user && current_user.is_admin){
             return true
         }else {
             return false 

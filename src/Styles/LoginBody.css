@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
-    background-image: url('../assets/Background.png');
     padding : 2rem;
     background-size: cover;
 }
