@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ApiService } from '../Services/ApiService';
+import  loadingImg from '../assets/loading.gif';
 
 function Cours() {
 
@@ -12,6 +13,7 @@ function Cours() {
     const [ue, setUE] = useState(''); // UE du cours
     const [professeurList, setProfesseurList] = useState([]); // liste des professeurs
     const [ueList, setUEList] = useState([]); // liste des UEs
+    const [isLoading, setLoading] = useState(false); // est-ce que l'on est en cours de chargement?
 
     // Gestionnaire d'événement pour la modification du champ "Nom"
     const handleNomChange = (event) => {
@@ -187,13 +189,16 @@ function Cours() {
     // change, cela va faire appel à la fonction getCours
     const [cours, setCours] = useState([])
     const getCours = async () => {
+        setLoading(true); // Affiche l'image de chargement
         try {
           const response = await ApiService.get(`/cours/?page=${paginationDetail.page}&offset=${paginationDetail.offset}`);
           if (response.status === 200) {
             setCours(response?.data?.coursList);
+            setLoading(false); // Cache l'image de chargement
           }
         } catch (error) {
           console.log(error);
+          setLoading(false); // Cache l'image de chargement en cas d'erreur
         }
     };
         useEffect(() => {
@@ -212,6 +217,13 @@ function Cours() {
                     onClick={handleInsert}// Ajout du gestionnaire d'événement onClick
                 >Ajouter un cours</button>
             </div>
+            {/* Ajouter un loading */}
+
+            {isLoading && (
+            <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-gray-200 opacity-70">
+                <img src={loadingImg} alt="Loading" />
+            </div>
+            )}
             <table className="border-collapse border w-full">
                 <thead>
                     <tr>

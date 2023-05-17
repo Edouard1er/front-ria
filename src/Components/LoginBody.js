@@ -31,7 +31,6 @@ function LoginBody() {
             console.log(response)
             sessionStorage.removeItem('registrationWithSuccess')
             if(localStorage.getItem('jwt_token') != null){
-                navigate('/forum')
                 console.log(localStorage.getItem('jwt_token'))
             }
         } catch (error) {
