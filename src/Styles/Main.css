@@ -1,0 +1,298 @@
+
+.home-body {
+    display: flex;
+    justify-content: space-evenly;
+    padding : 3rem 1.6rem;
+    background-image: url('../assets/Background.png');
+    background-size: cover;
+}
+
+.container-bg{
+    background-image: url('../assets/Background.png');
+    background-size: cover;
+}
+
+.home-body .left {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    align-self: center;
+    padding: 2rem;
+}
+.home-body .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 50%;
+    height: fit-content;
+    align-self: center;
+    padding: 2rem;
+}
+/* .right img {
+    height: 70%;
+    width: 70%;
+} */
+.arrowleft, .arrowright {
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.6rem;
+}
+.btn {
+    font-size: 1.2rem;
+    background: gray;
+    color: white;
+    padding : 1rem ;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+:root {
+    --color-primary-1: #6b8680;
+    --color-primary-2: #fff;
+    --color-secondary: #a4826d;
+    --color-third: #ff3131;
+    --color-fourth: #ff66c4;
+    --color-fifth: #004aad;
+    --color-sixth: #737373;
+    --color-seventh: #883539;
+    --textColorPrincipal: #444444;
+}
+  
+.text-color-principal {
+    color: var(--textColorPrincipal);
+}
+
+.border-text-color-principal {
+    border-color: var(--textColorPrincipal);
+}
+
+.color-primary-1 {
+    color: var(--color-primary-1);
+}
+
+.bg-color-primary-1 {
+    background-color: var(--color-primary-1);
+}
+
+.border-color-primary-1 {
+    border-color: var(--color-primary-1);
+}
+
+.color-primary-1-hover:hover {
+    color: var(--color-primary-1);
+}
+
+.bg-color-primary-1-hover:hover {
+    background-color: var(--color-primary-1);
+}
+
+.border-color-primary-1-hover:hover {
+    border-color: var(--color-primary-1);
+}
+
+.color-primary-2 {
+    color: var(--color-primary-2);
+}
+
+.bg-color-primary-2 {
+    background-color: var(--color-primary-2);
+}
+
+.border-color-primary-2 {
+    border-color: var(--color-primary-2);
+}
+
+.color-primary-2-hover:hover {
+    color: var(--color-primary-2);
+}
+
+.bg-color-primary-2-hover:hover {
+    background-color: var(--color-primary-2);
+}
+
+.border-color-primary-2-hover:hover {
+    border-color: var(--color-primary-2);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.bg-color-secondary {
+    background-color: var(--color-secondary);
+}
+
+.border-color-secondary {
+    border-color: var(--color-secondary);
+}
+
+.color-secondary-hover:hover {
+    color: var(--color-secondary);
+}
+
+.bg-color-secondary-hover:hover {
+    background-color: var(--color-secondary);
+}
+
+.border-color-secondary-hover:hover {
+    border-color: var(--color-secondary);
+}
+
+.color-third {
+    color: var(--color-third);
+}
+
+.bg-color-third {
+    background-color: var(--color-third);
+}
+
+.border-color-third {
+    border-color: var(--color-third);
+}
+
+.color-third-hover:hover {
+    color: var(--color-third);
+}
+
+.bg-color-third-hover:hover {
+    background-color: var(--color-third);
+}
+
+.border-color-third-hover:hover {
+    border-color: var(--color-third);
+}
+
+.color-fourth {
+    color: var(--color-fourth);
+}
+
+.bg-color-fourth {
+    background-color: var(--color-fourth);
+}
+
+.border-color-fourth {
+    border-color: var(--color-fourth);
+}
+
+.color-fourth-hover:hover {
+    color: var(--color-fourth);
+}
+
+.bg-color-fourth-hover:hover {
+    background-color: var(--color-fourth);
+}
+
+.border-color-fourth-hover:hover {
+    border-color: var(--color-fourth);
+}
+
+.color-fifth {
+    color: var(--color-fifth);
+}
+
+.bg-color-fifth {
+    background-color: var(--color-fifth);
+}
+
+.border-color-fifth {
+    border-color: var(--color-fifth);
+}
+
+.color-fifth-hover:hover {
+    color: var(--color-fifth);
+}
+
+.bg-color-fifth-hover:hover {
+    background-color: var(--color-fifth);
+}
+
+.border-color-fifth-hover:hover {
+    border-color: var(--color-fifth);
+}
+
+.color-sixth {
+    color: var(--color-sixth);
+}
+
+.bg-color-sixth {
+    background-color: var(--color-sixth);
+}
+
+.border-color-sixth {
+    border-color: var(--color-sixth);
+}
+
+.color-sixth-hover:hover {
+    color: var(--color-sixth);
+}
+
+.bg-color-sixth-hover:hover {
+    background-color: var(--color-sixth);
+}
+
+.border-color-sixth-hover:hover {
+    border-color: var(--color-sixth);
+}
+
+.color-seventh {
+    color: var(--color-primary);
+}
+
+.color-seventh {
+    color: var(--color-seventh);
+}
+
+.bg-color-seventh {
+    background-color: var(--color-seventh);
+}
+
+.border-color-seventh {
+    border-color: var(--color-seventh);
+}
+
+.color-seventh-hover:hover {
+    color: var(--color-seventh);
+}
+
+.bg-color-seventh-hover:hover {
+    background-color: var(--color-seventh);
+}
+
+.border-color-seventh-hover:hover {
+    border-color: var(--color-seventh);
+}
+
+.forum-body{
+    background-image: url('../assets/discussions-bg.jpg') !important;
+    min-height: 500px;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.animate-slide-up {
+    animation: slide-up 0.3s ease-in-out;
+}
+
+@keyframes slide-up {
+from {
+    transform: translate(0, 100%);
+}
+to {
+    transform: translate(0, 0);
+    visibility: 2s;
+    display: none;
+}
+}
+    

@@ -1,0 +1,104 @@
+
+.login-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    background-image: url('../assets/Background.png');
+    padding : 2rem;
+    background-size: cover;
+}
+.upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    padding: 1rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: none;
+    height: 12rem;
+}
+.upper h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(73, 72, 72);
+}
+.upper h3 {
+    font-size: 26px;
+    color: rgb(73, 72, 72);
+    cursor: pointer;
+}
+.middle {
+    display: flex;
+    align-items: center;
+    margin-top : 1rem;
+    font-size: 22px;
+    color: rgb(73, 72, 72);
+}
+.cadenas {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.lower {
+    width: 40%;
+    padding : 2rem 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 80%;
+}
+.form .row1, .form .row2 {
+    display: flex;
+    flex-direction: column;
+    padding : 1rem 0;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.form input {
+    height: 2.6rem;
+    width: 100%;
+    border : black solid 2px;
+    padding-left : 1rem;
+    margin-top : 2px;
+    margin-bottom: 0.4px;
+    border-radius: 8px;
+}
+.submit-btn {
+    height: fit-content;
+    padding: 0.6rem ;
+    font-size: 18px;
+    width: 60%;
+    color: white;
+    background-color: rgb(63, 62, 62);
+    border: solid white 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 1.6rem;
+}
+
+
+.errorMsg {
+    color: red;
+    font-size: 0.8rem;
+    padding: 0;
+    margin-top:0.4px;
+}
